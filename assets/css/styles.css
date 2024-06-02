@@ -325,12 +325,12 @@ body.light-theme {
 
 #I_am{
   color: var(--text-color);
-  font-size: 2rem;
+  font-size: var(--small-font-size);
   margin-bottom: 2.5rem;
 }
 #home_education {
   color: var(--text-color);
-  font-size: 2.5rem;
+  font-size: var(--small-font-size);
   margin-bottom: 2.5rem;
 }
 
