@@ -318,19 +318,20 @@ body.light-theme {
 
 .home__greeting {
   display: block;
-  font-size:40%;
-  
+  font-size: 2rem;
+  width: auto;
   color: var(--title-color);
 }
 
 #I_am{
   color: var(--text-color);
-  font-size: var(--small-font-size);
+  font-size: 2rem;
+  width: auto;
   margin-bottom: 2.5rem;
 }
 #home_education {
   color: var(--text-color);
-  font-size: var(--small-font-size);
+  font-size: 2.5rem;
   margin-bottom: 2.5rem;
 }
 
@@ -344,7 +345,7 @@ body.light-theme {
 }
 
 #welcome_button{
-    width: 30rem;
+    width: auto;
     height: 7rem;
     color: white;
     background-image: url("/assets/img/backgroundImg.jpg");
@@ -1241,3 +1242,4 @@ body.light-theme {
     border-radius: 0.5rem;
   }
 }
+
