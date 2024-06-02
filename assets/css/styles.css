@@ -213,7 +213,6 @@ body.light-theme {
 .section__title {
   font-size: var(--h2-font-size);
   color: var(--first-color);
-  margin-bottom: 2rem;
 }
 
 .section__subtitle {
@@ -228,6 +227,7 @@ body.light-theme {
   top: 0;
   left: 0;
   width: 100%;
+  padding: auto;
   /* height: var(--header-height); */
   background-color: var(--body-color);
   z-index: var(--z-fixed);
@@ -237,16 +237,19 @@ body.light-theme {
 .nav {
   height: var(--header-height);
   display: flex;
+  margin: auto;
   justify-content: space-between;
   align-items: center;
 }
 
 .nav__logo {
-  color: white;
-  font-weight: bold;
-  font-size: 30px;
-  font-family: "Varela Round", sans-serif;
+  color: rgb(228, 250, 243);
+  padding: 4px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
   transition: 0.4s;
+  background-color: blueviolet;
+  
 }
 
 .nav__logo:hover {
@@ -256,7 +259,7 @@ body.light-theme {
 .nav__menu {
   position: fixed;
   bottom: 1rem;
-  background-color: hsla(var(--second-hue), 32%, 16%, 0.8);
+  background-color: rgba(224, 85, 21, 0.89);
   width: 90%;
   border-radius: 4rem;
   padding: 1rem 2.25rem;
@@ -306,10 +309,9 @@ body.light-theme {
   
 }
 
-.home__data {
+.home__data{
   text-align: center;
 }
-
 .home__greeting,
 .home__education {
   font-size: var(--small-font-size);
@@ -320,6 +322,8 @@ body.light-theme {
   display: block;
   font-size: 2rem;
   width: auto;
+  display: inline-block;
+
   color: var(--title-color);
 }
 
@@ -327,6 +331,7 @@ body.light-theme {
   color: var(--text-color);
   font-size: 2rem;
   width: auto;
+
   margin-bottom: 2.5rem;
 }
 #home_education {
@@ -336,12 +341,23 @@ body.light-theme {
 }
 
 .home__name {
+  display: inline-block;
   font-size: var(--biggest-font-size);
   color: var(--first-color);
+
 }
 
 .home__img {
   width: 160px;
+  display: inline-block;
+
+  align-items: end;
+}
+
+.codingimg{
+  align-items: right;
+  width: 40%;
+
 }
 
 #welcome_button{
@@ -350,7 +366,7 @@ body.light-theme {
     color: white;
     background-image: url("/assets/img/backgroundImg.jpg");
     background-size: 30rem ;
-    margin-bottom: 2em ;
+    margin-bottom: 1em ;
     outline: 1.5px solid white;
     font-size: 2rem;
     font-weight:bold;
@@ -358,8 +374,8 @@ body.light-theme {
     transition:box-shadow 2s;
     border-radius: 1rem;
     animation-name: welcomeAnim;
-    animation-duration: 5s;
-    animation-delay: 3s;
+    animation-duration: 4s;
+    animation-delay: 2.8s;
     animation-timing-function: ease-in-out;   
     border-radius: 1rem;
     position: relative;
@@ -409,14 +425,16 @@ body.light-theme {
 }
 
 .home__social {
-  bottom: 4rem;
-  left: 0;
-  display: grid;
-  row-gap: 0.5rem;
+  
+  
+  display: flex;
+  row-gap: 1.5rem;
+  margin-left: 70%;
 }
 
 .home__social-link {
   width: max-content;
+  margin-right: 10%;
   background-color: var(--container-color);
   color: var(--first-color);
   padding: 0.25rem;
@@ -439,23 +457,12 @@ body.light-theme {
   transform: rotate(90deg) translate(16px, 4px);
 }
 
-.home__scroll {
-  color: var(--first-color);
-  right: -1.5rem;
-  bottom: 4rem;
-  display: grid;
-  row-gap: 2.25rem;
-  justify-items: center;
-}
 
 .home__scroll-icon {
   font-size: 1.25rem;
 }
 
-.home__scroll-name {
-  font-size: var(--smaller-font-size);
-  transform: rotate(-90deg);
-}
+
 
 /*=============== BUTTONS ===============*/
 .button {
