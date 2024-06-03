@@ -318,7 +318,7 @@ body.light-theme {
   display: block;
   font-size: 3rem;
   width: auto;
-  font-family: "Algerian";
+  font-family: Algerian,Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 3rem;
   color: var(--title-color);
 }
@@ -363,7 +363,7 @@ body.light-theme {
     color: white;
     background-image: url("/assets/img/redbackground.jpg");
     background-size: 35rem ;
-    margin-top: -2.2rem;
+    margin-top: -1.2rem;
     margin-bottom: 1em ;
     outline: 1.5px solid white;
     font-size: 2rem;
@@ -374,7 +374,7 @@ body.light-theme {
     animation-name: welcomeAnim;
     animation-duration: 4s;
     animation-delay: 2.8s;
-    animation-timing-function: ease-in-out;   
+    animation-timing-function: linear;   
     border-radius: 1rem;
     position: relative;
     
