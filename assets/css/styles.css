@@ -316,16 +316,17 @@ body.light-theme {
 
 .home__greeting {
   display: block;
-  font-size: 3rem;
+  font-size: 4rem;
   width: auto;
-  font-family: Algerian,Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 3rem;
   color: var(--title-color);
 }
 
 #I_am{
   color: var(--text-color);
-  font-size: 2.5rem;
+  font-size: 3rem;
   width: auto;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 2.5rem;
