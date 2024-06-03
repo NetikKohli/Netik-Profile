@@ -113,7 +113,78 @@ img {
   height: auto;
 }
 
+/*=============== THEME ===============*/
+.change__theme {
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
+.change__theme:hover {
+  color: var(--first-color);
+}
+
+/*========== Variables light theme ==========*/
+body.light-theme {
+  --title-color: hsl(var(--second-hue), 15%, 15%);
+  --text-color: white;
+  --body-color: hsl(var(--second-hue), 100%, 99%);
+  --container-color: #e9e9e9;
+}
+
+/*========== 
+    Color changes in some parts of 
+    the website, in light theme
+==========*/
+.light-theme .scroll-header {
+  box-shadow: 0 2px 4px hsla(0, 0%, 1%, 0.1);
+}
+
+.light-theme .nav__menu {
+  background-color: hsla(var(--second-hue), 32%, 90%, 0.8);
+}
+
+.light-theme .section__subtitle {
+  color: white;
+}
+
+.light-theme .home__social-link {
+  box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1);
+}
+
+.light-theme .home__social-link::after,
+.light-theme .footer__social-link {
+  background-color: var(--title-color);
+}
+
+.light-theme .home__social-link,
+.light-theme .home__scroll,
+.light-theme .button,
+.light-theme .button:hover,
+.light-theme .active-work,
+.light-theme .footer__title,
+.light-theme .footer__link,
+.light-theme .footer__copy {
+  color: var(--title-color);
+}
+
+.light-theme .about__box {
+  box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1);
+}
+
+.light-theme .button,
+.light-theme .skills__content,
+.light-theme .services__card,
+.light-theme .work__card,
+.light-theme .testimonial__card,
+.light-theme .contact__card,
+.light-theme .contact__form-div {
+  box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1);
+}
+
+.light-theme::-webkit-scrollbar {
+  background-color: hsl(var(--second-hue), 8%, 80%);
+}
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 968px;
@@ -140,14 +211,16 @@ img {
 }
 
 .section__title {
-  font-size: var(--h2-font-size);
-  color: var(--first-color);
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .section__subtitle {
   display: block;
-  font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
+  font-size: xx-large;
+  color: var(--text-light);
 }
 
 /*=============== HEADER & NAV===============*/
@@ -167,6 +240,7 @@ img {
   height: var(--header-height);
   display: flex;
   margin: auto;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -174,11 +248,8 @@ img {
 .nav__logo {
   color: rgb(228, 250, 243);
   padding: 4px;
-  font-size: 17px;
-  font-family: "Poppins", sans-serif;
-  transition: 0.4s;
-  background-color: blueviolet;
-  
+  transition: 2s ease-in-out;
+  font-weight: bold;
 }
 
 .nav__logo:hover {
@@ -188,11 +259,10 @@ img {
 .nav__menu {
   position: fixed;
   bottom: 1rem;
-  background-color: rgba(224, 85, 21, 0.89);
+  background-color:#201c1c;
   width: 100%;
   border-radius: 4rem;
   padding: 1rem 2.25rem;
-
   backdrop-filter: blur(10px);
   transition: 0.4s;
 }
@@ -240,29 +310,30 @@ img {
 }
 .home__greeting,
 .home__education {
-  font-size: var(--small-font-size);
+  font-size: 7rem;
   font-weight: var(--font-medium);
 }
 
 .home__greeting {
   display: block;
-  font-size: 2rem;
+  font-size: 4rem;
   width: auto;
-  display: inline-block;
-
+  font-family: "Algerian";
+  margin-bottom: 3rem;
   color: var(--title-color);
 }
 
 #I_am{
   color: var(--text-color);
-  font-size: 2rem;
+  font-size: 3rem;
   width: auto;
-
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 2.5rem;
 }
 #home_education {
   color: var(--text-color);
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 2.5rem;
 }
 
@@ -287,16 +358,17 @@ img {
 }
 
 #welcome_button{
-    width: auto;
-    height: 7rem;
+    width: 30rem;
+    height: 8rem;
     color: white;
-    background-image: url("/assets/img/backgroundImg.jpg");
-    background-size: 30rem ;
+    background-image: url("/assets/img/redbackground.jpg");
+    background-size: 35rem ;
+    margin-top: -3.2rem;
     margin-bottom: 1em ;
     outline: 1.5px solid white;
     font-size: 2rem;
     font-weight:bold;
-   
+    box-shadow: inset 0rem 0 0 0 darkblue;
     transition:box-shadow 2s;
     border-radius: 1rem;
     animation-name: welcomeAnim;
@@ -324,7 +396,7 @@ img {
 
 
 #welcome_button:hover{
-  box-shadow: inset 100rem 0 0 0 blue;
+  box-shadow: inset 100rem 0 0 0 rgb(12, 12, 187);
 }
 .home__handle {
   justify-self: center;
@@ -415,10 +487,11 @@ img {
 /*=============== ABOUT ===============*/
 .about__container {
   row-gap: 2.5rem;
+  
 }
 
 .about__img {
-  width: 40%;
+  width: 220px;
   border-radius: 1.5rem;
   justify-self: center;
 }
@@ -725,7 +798,7 @@ img {
 .contact__title {
   text-align: center;
   font-size: var(--h3-font-size);
-  margin-bottom: 1.5rem;
+  margin-bottom: 5rem;
 }
 
 .contact__info {
@@ -803,9 +876,11 @@ img {
 
 .contact__form-tag {
   position: absolute;
-  top: -0.75rem;
-  left: 1.25rem;
-  font-size: var(--smaller-font-size);
+  margin-top: 48px;
+  top: -3rem;
+  left: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
   padding: 0.25rem;
   background-color: var(--body-color);
   z-index: 10;
@@ -821,10 +896,12 @@ img {
 /*=============== FOOTER ===============*/
 .footer {
   background-color: var(--first-color);
+  height: 13rem;
 }
 
 .footer__container {
-  padding: 2rem 0 6rem;
+  padding: 1rem 0;
+  height: 7rem;
 }
 
 .footer__title,
@@ -895,7 +972,8 @@ img {
 @media screen and (max-width: 320px) {
   .nav__menu {
     padding: 1rem 1.5rem;
-    
+    width: 100%;
+    align-items: center;
   }
 
   .home__button {
