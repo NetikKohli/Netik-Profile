@@ -316,7 +316,7 @@ body.light-theme {
 
 .home__greeting {
   display: block;
-  font-size: 4rem;
+  font-size: 3rem;
   width: auto;
   font-family: "Algerian";
   margin-bottom: 3rem;
@@ -325,14 +325,14 @@ body.light-theme {
 
 #I_am{
   color: var(--text-color);
-  font-size: 3rem;
+  font-size: 2.5rem;
   width: auto;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 2.5rem;
 }
 #home_education {
   color: var(--text-color);
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 2.5rem;
 }
@@ -358,12 +358,12 @@ body.light-theme {
 }
 
 #welcome_button{
-    width: 30rem;
+    max-width:30rem;
     height: 8rem;
     color: white;
     background-image: url("/assets/img/redbackground.jpg");
     background-size: 35rem ;
-    margin-top: -3.2rem;
+    margin-top: -2.2rem;
     margin-bottom: 1em ;
     outline: 1.5px solid white;
     font-size: 2rem;
